@@ -4,10 +4,10 @@
     if ($a + $b <= $c || $a + $c <= $b || $b + $c <= $a) {
         return "Не треугольник";
     }
-    if ($a == $b && $b == $c) {
+    if ($a === $b && $b === $c) {
         return "Равносторонний треугольник";
     }
-    if ($a == $b || $a == $c || $b == $c) {
+    if ($a === $b || $a === $c || $b === $c) {
     }
     return "Разносторонний треугольник";
 }
@@ -15,4 +15,3 @@ echo second(3, 4, 5) . PHP_EOL;
 echo second(3, 3, 3) . PHP_EOL;
 echo second(3, 3, 5) . PHP_EOL;
 echo second(1, 2, 3) . PHP_EOL; 
-?>

@@ -1,9 +1,9 @@
 <?php
 function third(int $month): int {
-    if ($month == 2) {
+    if ($month === 2) {
         return 28;
     }
-    if ($month == 4 || $month == 6 || $month == 9 || $month == 11) {
+    if ($month === 4 || $month === 6 || $month === 9 || $month === 11) {
         return 30;
     }
         return 31;
@@ -20,4 +20,3 @@ echo "1) Сентябрь = ", third(9) . PHP_EOL;
 echo "1) Октябрь = ", third(10) . PHP_EOL;
 echo "1) Ноябрь = ", third(11) . PHP_EOL;
 echo "1) Декабрь = ", third(12) . PHP_EOL;
-?>
